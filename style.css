@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(00144.png) no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    align-items: center;
+}
+
+#container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+#first {
+    color: aqua;
+    font-size: 2.5rem;
+}
+
+#contador {
+    color: aqua;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border: 2px solid aqua;
+    width: 650px;
+    margin-left: 180px;
+    background: #202020;
+    box-shadow: 0 0 10px aqua;
+}
+
+.contador-element {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 15px;
+    padding: 0;
+}
+
+.contador-element p {
+    font-size: 7rem;
+}
+
+.contador-element span {
+    font-size: 2rem;
+}
+
+@media  (min-width:370px) and (max-width:450px) {
+    #container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 90px;
+    }
+    
+    #first {
+        color: aqua;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #contador {
+        color: aqua;
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        border: 2px solid aqua;
+        width: 380px;
+        margin-left: 10px;
+        background: #202020;
+        box-shadow: 0 0 10px aqua;
+    }
+
+    .contador-element {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 15px;
+        padding: 0;
+    }
+    
+    .contador-element p {
+        font-size: 3rem;
+    }
+    
+    .contador-element span {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <title>Contador</title>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+    <style>
+        #particles-js {
+            position: absolute;
+            width: 100%;
+        }
+    </style>   
+
+    <div id="container">
+        <span id="first">TEMPO RESTANTE ATÉ A 2ª FREQUÊNCIA:</span>
+        <div id="contador">
+            <div class="contador-element">
+                <p id="dias">00</p>
+                <span>DIAS</span>
+            </div>
+            <div class="contador-element">
+                <p id="horas">00</p>
+                <span>HORAS</span>
+            </div>
+            <div class="contador-element">
+                <p id="minutos">00</p>
+                <span>MINUTOS</span>
+            </div>
+            <div class="contador-element">
+                <p id="segundos">00</p>
+                <span>SEGUNDOS</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.js loaded - callback');
+        });
+    </script>
+
+</body>
+</html>
